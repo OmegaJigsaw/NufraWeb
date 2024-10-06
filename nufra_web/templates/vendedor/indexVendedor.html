@@ -1,0 +1,29 @@
+{% extends 'shared/baseIndex.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block brand %}
+<a href="#" class="navbar-brand">
+    <img class="img-fluid d-block mx-auto" style="max-height: 5rem;" src="{% static '/images/Logo.png' %}" alt="Logo">
+</a>
+{% endblock %}
+
+{% block navitems %}
+    <li class="nav-item">
+        <a href="#" class="nav-link">Inicio</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Panel Principal</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Gestion Venta</a>
+    </li>
+    <li class="nav-item">
+        <a href="#" class="nav-link">Reportes</a>
+    </li>
+{% endblock %}
+
+{% block content %}
+    <h1>Contenido Vendedor</h1>
+{% endblock %}
